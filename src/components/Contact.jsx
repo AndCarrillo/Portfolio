@@ -1,16 +1,19 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import { EMAIL_URL, GITHUB_URL, LINKEDIN_URL } from "../constants";
 
 function Contact() {
+  const { t } = useTranslation();
+
   return (
     <section id="contact">
       <footer className="bg-[#0b0b16] dark:bg-[#0b0b16] text-gray-100 py-10 px-6 md:px-12">
         <div className="max-w-6xl mx-auto space-y-8">
-          <h3 className="text-2xl font-semibold text-center">Contacto</h3>
-          <p className="text-center text-gray-300">
-            ¡Conectemos por estas plataformas!
-          </p>
+          <h3 className="text-2xl font-semibold text-center">
+            {t("contact.title")}
+          </h3>
+          <p className="text-center text-gray-300">{t("contact.intro")}</p>
 
           {/* Correo con icono en línea */}
           <div className="flex justify-center">
@@ -44,6 +47,7 @@ function Contact() {
               <FaLinkedin className="w-12 h-12 text-white" />
             </a>
           </div>
+
           {/* Sección de contacto con dirección */}
           <div className="text-center text-sm space-y-1 text-gray-400">
             <p>Heredia, Costa Rica</p>
@@ -51,8 +55,7 @@ function Contact() {
 
           {/* Derechos reservados */}
           <p className="text-sm text-center text-gray-500 mt-4">
-            © {new Date().getFullYear()} Andrea Carrillo. Todos los derechos
-            reservados.
+            © {new Date().getFullYear()} Andrea Carrillo. {t("footer.rights")}
           </p>
         </div>
       </footer>
