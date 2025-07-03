@@ -64,6 +64,11 @@ You can easily update:
 - 💡 Skills & projects in `src/constants.js`
 - 📸 Profile image in `src/assets/avatar/avatar.jpg`
 
+## ☁️ Deployment
+
+This project was deployed using [Vercel](https://vercel.com).  
+You can visit the live site at: 🔗 [https://portfolio.vercel.app](https://portfolio-two-pied-24.vercel.app)
+
 ---
 
-> Made with 💙 pastel tones and ☕ by Andrea Carrillo Oporto
+> Developed with 💙 pastel tones and ☕ by Andrea Carrillo Oporto
