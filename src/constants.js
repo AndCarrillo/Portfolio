@@ -2,6 +2,7 @@
 import projectImageLight from "./assets/project_Image/lightMode.png";
 import projectImageDark from "./assets/project_Image/darkMode.png";
 import projectImage2 from "./assets/project_Image/pokeGIF.gif";
+import projectImage3 from "./assets/project_Image/powerBI.png";
 
 // ICONOS (FontAwesome)
 import { faCode, faDatabase, faTools } from "@fortawesome/free-solid-svg-icons";
@@ -87,7 +88,7 @@ export const PROJECTS = [
     id: "powerbi",
     titleKey: "projects.p3.title",
     descriptionKey: "projects.p3.description",
-    image: "https://via.placeholder.com/400x200?text=Power+BI+Dashboard",
+    image: projectImage3,
     link: "#",
     techs: ["Power BI", "SQL"],
   },
