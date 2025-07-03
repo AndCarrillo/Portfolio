@@ -11,6 +11,10 @@ export const GITHUB_URL = "https://github.com/AndCarrillo";
 export const LINKEDIN_URL = "https://www.linkedin.com/in/andrea-carrillo-vlk/";
 export const EMAIL_URL = "acarrillo.vlk@gmail.com";
 
+// ========== INFORMACIÓN DE CONTACTO ==========
+export const LOCATION = "Heredia, Costa Rica";
+export const COPYRIGHT_NAME = "Andrea Carrillo";
+
 // ========== EXPERIENCIA LABORAL ==========
 export const WORK_ITEMS = [
   { id: "work_1", descriptionKey: "about.work_1" },
@@ -69,6 +73,7 @@ export const PROJECTS = [
     imageLight: projectImageLight,
     imageDark: projectImageDark,
     link: "https://github.com/AndCarrillo/Juego-Ahorcado-ONE",
+    techs: ["Java"],
   },
   {
     id: "pokeencriptador",
@@ -76,6 +81,7 @@ export const PROJECTS = [
     descriptionKey: "projects.p2.description",
     image: projectImage2,
     link: "https://github.com/AndCarrillo/PokeEncriptador-ONE",
+    techs: ["Java"],
   },
   {
     id: "powerbi",
@@ -83,5 +89,6 @@ export const PROJECTS = [
     descriptionKey: "projects.p3.description",
     image: "https://via.placeholder.com/400x200?text=Power+BI+Dashboard",
     link: "#",
+    techs: ["Power BI", "SQL"],
   },
 ];
