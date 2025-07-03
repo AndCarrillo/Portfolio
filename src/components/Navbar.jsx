@@ -1,7 +1,28 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { FaCode, FaBars, FaTimes } from "react-icons/fa";
+import {
+  FaCode,
+  FaBars,
+  FaTimes,
+  FaUser,
+  FaTools,
+  FaFolderOpen,
+  FaEnvelope,
+  FaHome,
+} from "react-icons/fa";
 import ThemeToggle from "./ThemeToggle";
+
+// Secciones del menú
+const sections = ["hero", "about", "skills", "projects", "contact"];
+
+// Íconos asociados a cada sección
+const menuIcons = {
+  hero: <FaHome className="mr-2" />,
+  about: <FaUser className="mr-2" />,
+  skills: <FaTools className="mr-2" />,
+  projects: <FaFolderOpen className="mr-2" />,
+  contact: <FaEnvelope className="mr-2" />,
+};
 
 function Navbar({ darkMode, setDarkMode }) {
   const { t, i18n } = useTranslation();
@@ -9,12 +30,10 @@ function Navbar({ darkMode, setDarkMode }) {
 
   const toggleLanguage = (lang) => {
     i18n.changeLanguage(lang);
-    setMenuOpen(false); // cerrar menú en móvil al cambiar idioma
+    setMenuOpen(false);
   };
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  const toggleMenu = () => setMenuOpen(!menuOpen);
 
   const handleNavClick = (section) => {
     const target = document.getElementById(section);
@@ -33,30 +52,22 @@ function Navbar({ darkMode, setDarkMode }) {
           <span className="tracking-wide text-white">{t("siteName")}</span>
         </div>
 
-        {/* Botón Hamburguesa */}
-        <button
-          onClick={toggleMenu}
-          className="md:hidden z-20 text-pastel3"
-          aria-label="Menú"
-        >
-          {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-        </button>
-
-        {/* Menú central - Escritorio */}
-        <nav className="hidden md:flex gap-4 z-10">
-          {["about", "skills", "projects", "contact"].map((section) => (
+        {/* Menú Escritorio */}
+        <nav className="hidden md:flex gap-4 items-center z-10">
+          {sections.map((section) => (
             <button
               key={section}
               onClick={() => handleNavClick(section)}
-              className="px-4 py-2 rounded-md text-gray-200 hover:text-pastel3 hover:bg-[#1e1f26] transition duration-300"
+              className="px-4 py-2 rounded-md text-gray-200 hover:text-pastel1 hover:bg-[#1e1f26] transition-colors duration-300 flex items-center"
             >
+              {menuIcons[section]}
               {t(`${section}.title`)}
             </button>
           ))}
         </nav>
 
-        {/* Idioma + tema - Escritorio */}
-        <div className="hidden md:flex gap-2 items-center z-10">
+        {/* Idioma + Tema (siempre visibles) */}
+        <div className="flex gap-2 items-center z-10">
           {["en", "es"].map((lang) => (
             <button
               key={lang}
@@ -69,34 +80,31 @@ function Navbar({ darkMode, setDarkMode }) {
           <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
         </div>
 
-        {/* Menú móvil */}
-        {menuOpen && (
-          <div className="absolute top-16 left-0 w-full bg-[#0b0b16] flex flex-col items-center gap-4 py-6 shadow-md md:hidden z-10 border-t border-pastel3">
-            {["about", "skills", "projects", "contact"].map((section) => (
-              <button
-                key={section}
-                onClick={() => handleNavClick(section)}
-                className="text-gray-200 hover:text-pastel3 transition"
-              >
-                {t(`${section}.title`)}
-              </button>
-            ))}
-
-            <div className="flex gap-4 mt-4">
-              {["en", "es"].map((lang) => (
-                <button
-                  key={lang}
-                  onClick={() => toggleLanguage(lang)}
-                  className="px-3 py-1 text-sm font-medium text-gray-100 bg-[#1e1f26] border border-pastel3 rounded-md hover:bg-[#2a2b35] hover:text-pastel1 transition-all duration-300"
-                >
-                  {lang.toUpperCase()}
-                </button>
-              ))}
-              <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
-            </div>
-          </div>
-        )}
+        {/* Botón Hamburguesa */}
+        <button
+          onClick={toggleMenu}
+          className="md:hidden z-20 text-pastel3"
+          aria-label="Menú"
+        >
+          {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+        </button>
       </div>
+
+      {/* Menú móvil */}
+      {menuOpen && (
+        <div className="md:hidden px-6 pb-6 pt-4 flex flex-col items-center gap-4 bg-[#0b0b16] shadow-md z-10 border-t border-pastel3">
+          {sections.map((section) => (
+            <button
+              key={section}
+              onClick={() => handleNavClick(section)}
+              className="text-gray-200 hover:text-pastel1 transition-colors duration-300 flex items-center"
+            >
+              {menuIcons[section]}
+              {t(`${section}.title`)}
+            </button>
+          ))}
+        </div>
+      )}
     </header>
   );
 }
