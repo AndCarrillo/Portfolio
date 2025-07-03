@@ -1,0 +1,68 @@
+{
+  "siteName": "Mi Portafolio",
+  "hero": {
+    "title": "Andrea Carrillo",
+    "subtitle": "Desarrollo de soluciones tecnológicas",
+    "theme": "Tema",
+    "description": "Ingeniera en Sistemas de Información con experiencia en desarrollo full stack, automatización y análisis de datos. Utilizo tecnologías como Python, .NET, Power BI y RPA en entornos ágiles para crear soluciones eficientes y escalables."
+  },
+  "about": {
+    "title": "Sobre mí",
+    "description": "Oriento mi trabajo a resolver necesidades reales mediante el uso estratégico de herramientas modernas. Participo en proyectos de backend, visualización de datos y automatización, priorizando la eficiencia, la claridad y el trabajo colaborativo.",
+    "work_title": "Lo que hago",
+    "work_1": "Desarrollo de aplicaciones orientadas a datos.",
+    "work_2": "Automatización de tareas con RPA y scripts en la nube.",
+    "work_3": "Visualización y análisis con Power BI.",
+    "learn_title": "Lo que aprendo",
+    "learn_1": "Inteligencia Artificial y Machine Learning.",
+    "learn_2": "Computación científica con Python y SciPy.",
+    "learn_3": "Certificaciones en nube y DevOps.",
+    "footer": "Comprometida con el aprendizaje continuo, el trabajo en equipo y el uso estratégico de la tecnología."
+  },
+  "skills": {
+    "title": "Habilidades",
+    "description": "Mis habilidades abarcan una variedad de tecnologías y herramientas, incluyendo Python, .NET, Power BI, RPA y servicios en la nube. Estoy comprometida con el aprendizaje continuo y la mejora constante.",
+    "languages_title": "Lenguajes y programación",
+    "languages_1": "Python, Java, C++, C#, Visual Basic.NET",
+    "languages_2": "HTML, CSS, JavaScript",
+    "languages_3": "ASPX, Android Studio",
+    "databases_title": "Bases de datos",
+    "databases_1": "SQL Server, MySQL, PostgreSQL, Oracle",
+    "databases_2": "Modelado de datos y optimización de consultas",
+    "databases_3": "SSIS (Servicios de Integración de SQL Server)",
+    "tools_title": "Herramientas y tecnologías",
+    "tools_1": "Power BI, Figma, GitHub",
+    "tools_2": "Azure, Firebase, Arduino",
+    "tools_3": "Scrum, Azure DevOps",
+    "tools_4": "RPA (Automatización Robótica de Procesos)",
+    "footer": "Experiencia combinando herramientas modernas con buenas prácticas para entregar soluciones efectivas y escalables."
+  },
+  "projects": {
+    "title": "Proyectos",
+    "description": "Proyectos personales y académicos que muestran mis habilidades en desarrollo, diseño y análisis de datos.",
+    "view_repo": "Ver en GitHub",
+    "p1": {
+      "title": "Juego Ahorcado - ONE",
+      "description": "Juego interactivo de consola en Java como parte de Oracle Next Education."
+    },
+    "p2": {
+      "title": "PokeEncriptador - ONE",
+      "description": "Aplicación Java de cifrado y descifrado de texto usando personajes Pokémon."
+    },
+    "p3": {
+      "title": "Tablero de Datos con Power BI",
+      "description": "Dashboard interactivo para visualización de KPIs estratégicos."
+    },
+    "footer": "¡Más proyectos en camino!"
+  },
+  "contact": {
+    "title": "Contacto",
+    "intro": "¿Interesado en colaborar o conocer más sobre mi trabajo? ¡Estoy abierta a nuevas oportunidades, proyectos y desafíos!",
+    "email": "Correo",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  }
+}

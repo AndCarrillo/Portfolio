@@ -1,0 +1,68 @@
+{
+  "siteName": "My Portfolio",
+  "hero": {
+    "title": "Andrea Carrillo",
+    "subtitle": "Developing technology solutions",
+    "theme": "Theme",
+    "description": "Information Systems Engineer with experience in full stack development, automation, and data analysis. I work with technologies like Python, .NET, Power BI, and RPA in agile environments to deliver scalable and efficient solutions."
+  },
+  "about": {
+    "title": "About Me",
+    "description": "My work focuses on addressing real needs through the strategic use of modern tools. I contribute to backend development, data visualization, and automation projects, emphasizing clarity, efficiency, and collaboration.",
+    "work_title": "What I do",
+    "work_1": "Developing data-oriented applications.",
+    "work_2": "Automating tasks using RPA and cloud scripts.",
+    "work_3": "Data visualization and reporting with Power BI.",
+    "learn_title": "What I'm learning",
+    "learn_1": "Artificial Intelligence and Machine Learning.",
+    "learn_2": "Scientific computing with Python and SciPy.",
+    "learn_3": "Cloud and DevOps certifications.",
+    "footer": "Focused on continuous learning, collaboration, and the strategic application of technology."
+  },
+  "skills": {
+    "title": "Skills",
+    "description": "My skills span a variety of technologies and tools, including Python, .NET, Power BI, RPA, and cloud services. I'm committed to continuous learning and constant improvement.",
+    "languages_title": "Languages and Programming",
+    "languages_1": "Python, Java, C++, C#, Visual Basic.NET",
+    "languages_2": "HTML, CSS, JavaScript",
+    "languages_3": "ASPX, Android Studio",
+    "databases_title": "Databases",
+    "databases_1": "SQL Server, MySQL, PostgreSQL, Oracle",
+    "databases_2": "Data modeling and query optimization",
+    "databases_3": "SSIS (SQL Server Integration Services)",
+    "tools_title": "Tools and Technologies",
+    "tools_1": "Power BI, Figma, GitHub",
+    "tools_2": "Azure, Firebase, Arduino",
+    "tools_3": "Scrum, Azure DevOps",
+    "tools_4": "RPA (Robotic Process Automation)",
+    "footer": "Experience combining modern tools with best practices to deliver effective and scalable solutions."
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Personal and academic projects that showcase my development, design and data skills.",
+    "view_repo": "View on GitHub",
+    "p1": {
+      "title": "Hangman Game - ONE",
+      "description": "Interactive console game built in Java as part of Oracle Next Education."
+    },
+    "p2": {
+      "title": "PokeEncryptor - ONE",
+      "description": "Java app for encrypting and decrypting text using Pokémon characters."
+    },
+    "p3": {
+      "title": "Power BI Dashboard",
+      "description": "Interactive dashboard for strategic KPI visualization."
+    },
+    "footer": "More projects coming soon!"
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Interested in collaborating or learning more about my work? I'm open to new opportunities, projects, and challenges!",
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}
