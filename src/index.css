@@ -1,0 +1,81 @@
+/* Tipografía */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Tailwind base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ====================================
+   ✦ GLOBAL RESET Y ESTILOS GENERALES
+======================================= */
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* =====================
+   ✦ ANIMACIONES CLAVE
+======================= */
+@keyframes blob {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* =====================================
+   ✦ UTILIDADES PERSONALIZADAS (Tailwind)
+======================================== */
+@layer utilities {
+  /* Animaciones */
+  .animate-blob {
+    animation: blob 8s infinite;
+  }
+
+  .animate-wave {
+    animation: wave 10s linear infinite;
+  }
+
+  /* Clip paths personalizados */
+  .clip-path-custom {
+    clip-path: polygon(0 0, 100% 0, 100% 98%, 75% 95%, 0 100%);
+  }
+
+  .clip-path-custom-2 {
+    clip-path: polygon(0 0, 100% 0, 100% 98%, 25% 95%, 0 100%);
+  }
+
+  .clip-path-custom-3 {
+    clip-path: polygon(0 0, 100% 0, 100% 98%, 75% 96%, 0 100%);
+  }
+
+  /* Olas separadoras de secciones */
+  .wave-bottom {
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 75% 100%, 0 95%);
+  }
+
+  .wave-top {
+    clip-path: polygon(0 100%, 100% 100%, 100% 5%, 75% 0, 0 5%);
+  }
+}
