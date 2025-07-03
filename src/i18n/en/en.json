@@ -1,7 +1,8 @@
 {
-  "siteName": "My Portfolio",
+  "siteName": "Portfolio",
   "hero": {
-    "title": "Andrea Carrillo",
+    "title": "Home",
+    "name": "Andrea Carrillo",
     "subtitle": "Developing technology solutions",
     "theme": "Theme",
     "description": "Information Systems Engineer with experience in full stack development, automation, and data analysis. I work with technologies like Python, .NET, Power BI, and RPA in agile environments to deliver scalable and efficient solutions."
