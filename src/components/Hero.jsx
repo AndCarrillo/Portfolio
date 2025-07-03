@@ -10,7 +10,10 @@ function Hero() {
 
   return (
     <>
-      <section className="relative overflow-hidden py-24 md:py-32 px-6 md:px-12 bg-gradient-to-br from-[#f4f0ff] via-[#eae4ff] to-[#faf9ff] dark:from-[#0d0d1a] dark:via-[#0b0b16] dark:to-[#070612] text-gray-800 dark:text-gray-100 transition-all duration-500">
+      <section
+        id="hero"
+        className="relative overflow-hidden py-24 md:py-32 px-6 md:px-12 bg-gradient-to-br from-[#f4f0ff] via-[#eae4ff] to-[#faf9ff] dark:from-[#0d0d1a] dark:via-[#0b0b16] dark:to-[#070612] text-gray-800 dark:text-gray-100 transition-all duration-500"
+      >
         {/* Patrón decorativo */}
         <div className="absolute inset-0 z-0 bg-[radial-gradient(#0000000b_1px,transparent_1px)] dark:bg-[radial-gradient(#ffffff0a_1px,transparent_1px)] bg-[size:16px_24px] pointer-events-none" />
 
@@ -20,7 +23,7 @@ function Hero() {
         <div className="relative z-10 flex flex-col-reverse md:flex-row items-center justify-between max-w-6xl mx-auto gap-12">
           <div className="text-center md:text-left space-y-8 md:space-y-8 max-w-xl">
             <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
-              {t("hero.title")}
+              {t("hero.name")}
             </h1>
             <h2 className="text-2xl md:text-3xl font-light text-[#3b3054] dark:text-[#e3d9f7]">
               {t("hero.subtitle")}
@@ -30,6 +33,7 @@ function Hero() {
             </p>
 
             <div className="flex justify-center md:justify-start gap-6 pt-6">
+              {/* Correo */}
               <a
                 href={`mailto:${EMAIL_URL}`}
                 className="inline-flex items-center gap-2 bg-[#1e1f26] text-pastel3 font-medium px-4 py-2 rounded-full shadow-md hover:bg-[#2a2b35] hover:text-pastel1 transition-all duration-300 border border-pastel3"
@@ -37,27 +41,32 @@ function Hero() {
                 <FaEnvelope className="w-5 h-5 text-white" />
                 <span className="text-white">{EMAIL_URL}</span>
               </a>
+
+              {/* GitHub */}
               <a
                 href={GITHUB_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#3b3054] dark:hover:text-[#d7f9f1] transition"
                 aria-label="GitHub"
+                className="transition-all duration-300 hover:scale-110 hover:text-pastel1"
               >
-                <FaGithub className="w-8 h-8 text-gray-700 dark:text-white" />
+                <FaGithub className="w-10 h-10 text-gray-700 dark:text-white" />
               </a>
+
+              {/* LinkedIn */}
               <a
                 href={LINKEDIN_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#3b3054] dark:hover:text-[#d7f9f1] transition"
                 aria-label="LinkedIn"
+                className="transition-all duration-300 hover:scale-110 hover:text-pastel1"
               >
-                <FaLinkedin className="w-8 h-8 text-gray-700 dark:text-white" />
+                <FaLinkedin className="w-10 h-10 text-gray-700 dark:text-white" />
               </a>
             </div>
           </div>
 
+          {/* Imagen */}
           <div className="relative w-64 h-64 md:w-80 md:h-80">
             <img
               src={profileImage}
