@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import { PROJECTS } from "../constants";
 
 function Projects({ darkMode }) {
@@ -59,17 +60,18 @@ function Projects({ darkMode }) {
                       {t(descriptionKey)}
                     </p>
 
+                    {/* Badges de tecnologías */}
                     {techs.length > 0 && (
                       <div className="flex flex-wrap justify-center gap-2 pt-2">
                         {techs.map((tech) => (
                           <span
                             key={tech}
                             className={`text-xs font-medium px-2.5 py-1.5 border rounded-full inline-flex items-center transition-all duration-300 transform hover:scale-105
-                            ${
-                              isDark
-                                ? "bg-[#ffffff0a] text-pastel1 border-pastel1"
-                                : "bg-[#0b0b160a] text-pastel3 border-pastel3"
-                            }`}
+                              ${
+                                isDark
+                                  ? "bg-[#ffffff0a] text-pastel1 border-pastel1"
+                                  : "bg-[#0b0b160a] text-pastel3 border-pastel3"
+                              }`}
                           >
                             {tech}
                           </span>
@@ -82,9 +84,10 @@ function Projects({ darkMode }) {
                         href={link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm text-brand.link dark:text-brand.accent hover:underline"
+                        className="inline-flex items-center gap-2 text-sm text-brand.link dark:text-brand.accent hover:underline transition-colors duration-300"
                       >
-                        {t("projects.view_repo")} ↗
+                        {t("projects.view_repo")}
+                        <FaExternalLinkAlt className="w-3 h-3" />
                       </a>
                     </div>
                   </div>
