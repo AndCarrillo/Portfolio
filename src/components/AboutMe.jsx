@@ -13,7 +13,7 @@ function AboutMe() {
     <>
       <section
         id="about"
-        className="py-24 px-6 md:px-12 lg:px-24 transition-colors duration-500"
+        className="py-20 md:py-28 px-6 md:px-12 lg:px-24 transition-colors duration-500"
       >
         <div className="max-w-5xl mx-auto space-y-12">
           <h2 className="text-4xl md:text-5xl font-bold text-center text-brand.primary dark:text-brand.accent">
@@ -47,6 +47,10 @@ function AboutMe() {
           <p className="text-center text-sm text-text-footer dark:text-text-footerDark pt-8">
             {t("about.footer")}
           </p>
+        </div>
+        {/* Indicador de scroll animado */}
+        <div className="flex justify-center mt-2 animate-bounce">
+          <span className="inline-block w-8 h-8 border-b-4 border-r-4 border-gray-700 dark:border-white rounded-br-lg transform rotate-45"></span>
         </div>
       </section>
     </>

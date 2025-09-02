@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { EMAIL_URL, GITHUB_URL, LINKEDIN_URL } from "../constants";
-import profileImage from "../assets/avatar/avatar.jpg";
+import profileImage from "../assets/avatar/profile_back.png";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import WaveDivider from "./WaveDivider";
 
@@ -12,7 +12,7 @@ function Hero() {
     <>
       <section
         id="hero"
-        className="relative overflow-hidden py-24 md:py-32 px-6 md:px-12 bg-gradient-to-br from-[#f4f0ff] via-[#eae4ff] to-[#faf9ff] dark:from-[#0d0d1a] dark:via-[#0b0b16] dark:to-[#070612] text-gray-800 dark:text-gray-100 transition-all duration-500"
+        className="relative overflow-hidden py-20 md:py-28 px-6 md:px-12 bg-gradient-to-br from-[#f4f0ff] via-[#eae4ff] to-[#faf9ff] dark:from-[#0d0d1a] dark:via-[#0b0b16] dark:to-[#070612] text-gray-800 dark:text-gray-100 transition-all duration-500"
       >
         {/* Patrón decorativo */}
         <div className="absolute inset-0 z-0 bg-[radial-gradient(#0000000b_1px,transparent_1px)] dark:bg-[radial-gradient(#ffffff0a_1px,transparent_1px)] bg-[size:16px_24px] pointer-events-none" />
@@ -66,17 +66,21 @@ function Hero() {
             </div>
           </div>
 
-          {/* Imagen */}
-          <div className="relative w-64 h-64 md:w-80 md:h-80">
+          {/* Imagen protagonista y sobresaliente */}
+          <div className="relative flex items-end justify-center w-full md:w-1/2 min-h-[350px] md:min-h-[500px] overflow-visible mt-4 md:mt-0">
             <img
               src={profileImage}
               alt="Profile"
-              className="relative z-10 w-full h-full object-cover rounded-full shadow-xl border-4 border-white dark:border-[#1e1f26]"
+              className="w-[340px] h-[420px] md:w-[480px] md:h-[600px] object-cover rounded-full shadow-2xl border-2 border-gray-900 dark:border-gray-100 transition-transform duration-300 hover:scale-105 hover:shadow-3xl bg-gray-900 dark:bg-gray-100"
+              style={{ objectPosition: "top center" }}
             />
           </div>
         </div>
+        {/* Indicador de scroll animado */}
+        <div className="flex justify-center mt-2 animate-bounce">
+          <span className="inline-block w-8 h-8 border-b-4 border-r-4 border-gray-700 dark:border-white rounded-br-lg transform rotate-45"></span>
+        </div>
       </section>
-
       <WaveDivider className="text-pastel1 dark:text-gray-900 h-16" />
     </>
   );
