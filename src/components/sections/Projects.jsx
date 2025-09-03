@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { PROJECTS } from "../constants";
+import { PROJECTS } from "../../constants/constants";
 
 function Projects({ darkMode }) {
   const { t } = useTranslation();
@@ -10,10 +10,10 @@ function Projects({ darkMode }) {
   return (
     <section
       id="projects"
-      className="py-20 md:py-28 px-6 md:px-12 lg:px-24 transition-colors duration-500"
+      className="min-h-screen py-20 md:py-28 px-6 md:px-12 lg:px-24 transition-colors duration-500 flex items-center"
     >
-      <div className="max-w-6xl mx-auto space-y-14">
-        <h2 className="text-4xl md:text-5xl font-bold text-center text-brand.primary dark:text-brand.accent">
+      <div className="max-w-5xl mx-auto space-y-12">
+        <h2 className="text-4xl md:text-5xl font-bold text-center text-brand-primary dark:text-brand-accent">
           {t("projects.title")}
         </h2>
 
@@ -43,7 +43,7 @@ function Projects({ darkMode }) {
               return (
                 <div
                   key={id}
-                  className="bg-surface-light dark:bg-surface-dark/80 backdrop-blur-md rounded-3xl shadow-xl border border-brand.accent dark:border-brand.accent overflow-hidden hover:shadow-2xl hover:scale-[1.03] transition-all duration-300"
+                  className="bg-surface-light dark:bg-surface-dark/80 backdrop-blur-md rounded-3xl shadow-xl border border-brand-accent dark:border-brand-accent overflow-hidden hover:shadow-2xl hover:scale-[1.03] transition-all duration-300 w-full max-w-md mx-auto"
                 >
                   <img
                     src={projectImage}
@@ -102,9 +102,19 @@ function Projects({ darkMode }) {
         </p>
       </div>
       {/* Indicador de scroll animado */}
-      <div className="flex justify-center mt-2 animate-bounce">
-        <span className="inline-block w-8 h-8 border-b-4 border-r-4 border-gray-700 dark:border-white rounded-br-lg transform rotate-45"></span>
-      </div>
+      <button
+        type="button"
+        aria-label="Scroll to Contact"
+        className="flex justify-center mt-2 animate-bounce focus:outline-none"
+        onClick={() => {
+          const nextSection = document.getElementById("contact");
+          if (nextSection) {
+            nextSection.scrollIntoView({ behavior: "smooth" });
+          }
+        }}
+      >
+        <span className="inline-block w-8 h-8 border-b-4 border-r-4 border-border-light dark:border-border-dark rounded-br-lg transform rotate-45"></span>
+      </button>
     </section>
   );
 }

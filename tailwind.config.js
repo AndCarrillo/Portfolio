@@ -6,9 +6,9 @@ export default {
     extend: {
       colors: {
         brand: {
-          base: "#e3e7ff", // base pastel suave (lavanda gris)
+          base: "#e9d5ff", // base pastel suave (lavanda gris)
           accent: "#c7b6f2", // lila claro
-          primary: "#74b9dc", // celeste pastel
+          primary: "#40196b", // celeste pastel
           secondary: "#a0e7e5", // menta suave
           link: "#5b8dfd", // azul vibrante para enlaces
 
@@ -27,14 +27,14 @@ export default {
         text: {
           primary: "#1e293b", // azul oscuro neutro
           light: "#e8f0fc", // casi blanco azulado (modo dark)
-          muted: "#66788b", // gris azulado
+          muted: "#000", // gris azulado
           mutedDark: "#9acaff", // celeste suave
           footer: "#5b8dfd", // azul más fuerte para texto
           footerDark: "#cde5ff", // celeste grisáceo (modo dark)
         },
         border: {
-          light: "#c2d4f8", // azul pálido lavanda
-          dark: "#3b4b60", // gris azulado profundo
+          light: "#8372AC", // lavanda
+          dark: "#ECD0EF", // rosado lavanda
         },
       },
     },

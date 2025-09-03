@@ -10,7 +10,7 @@ import {
   FaEnvelope,
   FaHome,
 } from "react-icons/fa";
-import ThemeToggle from "./ThemeToggle";
+import ThemeToggle from "../common/ThemeToggle";
 
 // Secciones del menú
 const sections = ["hero", "about", "skills", "projects", "contact"];

@@ -1,5 +1,5 @@
 import React from "react";
-import WaveDivider from "./WaveDivider";
+import WaveDivider from "../layout/WaveDivider";
 import SectionTransition from "./SectionTransition";
 
 const Section = ({

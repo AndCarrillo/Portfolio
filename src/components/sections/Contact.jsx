@@ -12,7 +12,7 @@ import {
   LINKEDIN_URL,
   LOCATION,
   COPYRIGHT_NAME,
-} from "../constants";
+} from "../../constants";
 
 function Contact() {
   const { t } = useTranslation();

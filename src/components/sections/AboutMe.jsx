@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { WORK_ITEMS, LEARNING_ITEMS } from "../constants";
+import { WORK_ITEMS, LEARNING_ITEMS } from "../../constants";
 
 function AboutMe() {
   const { t } = useTranslation();
@@ -13,10 +13,10 @@ function AboutMe() {
     <>
       <section
         id="about"
-        className="py-20 md:py-28 px-6 md:px-12 lg:px-24 transition-colors duration-500"
+        className="min-h-screen py-20 md:py-28 px-6 md:px-12 lg:px-24 transition-colors duration-500 flex items-center"
       >
         <div className="max-w-5xl mx-auto space-y-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-center text-brand.primary dark:text-brand.accent">
+          <h2 className="text-4xl md:text-5xl font-bold text-center text-brand-primary dark:text-brand-accent">
             {t("about.title")}
           </h2>
 
@@ -26,7 +26,7 @@ function AboutMe() {
 
           <div className="grid gap-8 md:grid-cols-2">
             <div>
-              <h3 className="text-xl font-semibold text-brand.secondary dark:text-brand.accent mb-2">
+              <h3 className="text-xl font-semibold text-brand-primary dark:text-brand-accent mb-2">
                 {t("about.work_title")}
               </h3>
               <ul className="list-disc list-inside text-text-muted dark:text-text-mutedDark space-y-1">
@@ -35,7 +35,7 @@ function AboutMe() {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-brand.secondary dark:text-brand.accent mb-2">
+              <h3 className="text-xl font-semibold text-brand-primary dark:text-brand-accent mb-2">
                 {t("about.learn_title")}
               </h3>
               <ul className="list-disc list-inside text-text-muted dark:text-text-mutedDark space-y-1">
@@ -49,9 +49,19 @@ function AboutMe() {
           </p>
         </div>
         {/* Indicador de scroll animado */}
-        <div className="flex justify-center mt-2 animate-bounce">
-          <span className="inline-block w-8 h-8 border-b-4 border-r-4 border-gray-700 dark:border-white rounded-br-lg transform rotate-45"></span>
-        </div>
+        <button
+          type="button"
+          aria-label="Scroll to Skills"
+          className="flex justify-center mt-2 animate-bounce focus:outline-none"
+          onClick={() => {
+            const nextSection = document.getElementById("skills");
+            if (nextSection) {
+              nextSection.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+        >
+          <span className="inline-block w-8 h-8 border-b-4 border-r-4 border-border-light dark:border-border-dark rounded-br-lg transform rotate-45"></span>
+        </button>
       </section>
     </>
   );
