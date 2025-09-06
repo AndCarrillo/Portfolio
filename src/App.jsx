@@ -53,12 +53,17 @@ function App() {
         <Section id="skills" withWave bgColor="bg-transparent">
           <Skills />
         </Section>
-        <Section id="projects" withWave flipWave bgColor="bg-transparent">
+        <Section
+          id="projects"
+          withWave
+          flipWave
+          bgColor="bg-transparent"
+          className="pb-0"
+        >
           <Projects darkMode={darkMode} />
         </Section>
-        <Section id="contact" bgColor="bg-pastel1 dark:bg-pastel5">
-          <Contact />
-        </Section>
+        {/* Contact se renderiza sin Section para evitar padding/margin extra y asegurar background completo */}
+        <Contact />
       </main>
     </div>
   );

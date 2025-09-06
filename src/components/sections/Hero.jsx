@@ -95,7 +95,7 @@ function Hero() {
         <button
           type="button"
           aria-label="Scroll to About Me"
-          className="flex justify-center mt-2 animate-bounce focus:outline-none"
+          className="hidden sm:flex justify-center mt-2 animate-bounce focus:outline-none"
           onClick={() => {
             const nextSection = document.getElementById("about");
             if (nextSection) {
