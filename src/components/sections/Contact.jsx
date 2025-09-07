@@ -1,4 +1,5 @@
 import React from "react";
+import avatarImage from "../../assets/avatar/avatar.jpg";
 import { useTranslation } from "react-i18next";
 import {
   FaEnvelope,
@@ -26,7 +27,7 @@ function Contact() {
         {/* Identidad */}
         <div className="flex flex-col items-center gap-2">
           <img
-            src="/src/assets/avatar/avatar.jpg"
+            src={avatarImage}
             alt="Andrea Carrillo"
             className="w-16 h-16 rounded-full border-2 border-pastel3 shadow-md"
           />
