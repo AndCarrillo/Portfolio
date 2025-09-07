@@ -41,7 +41,7 @@ function Hero() {
                 {/* Brillo superior */}
                 <span className="absolute top-0 left-0 w-full h-1/3 rounded-t-full bg-white/40 dark:bg-white/10 blur-sm pointer-events-none" />
                 <FaEnvelope className="w-7 h-7 text-brand-primary dark:text-brand-accent group-hover:text-pastel1 transition-colors duration-300 z-10" />
-                <span className="font-semibold text-brand-primary dark:text-brand-accent group-hover:text-pastel1 transition-colors duration-300 z-10">
+                <span className="hidden md:inline font-semibold text-brand-primary dark:text-brand-accent group-hover:text-pastel1 transition-colors duration-300 z-10">
                   {EMAIL_URL}
                 </span>
               </a>
