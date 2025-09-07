@@ -47,8 +47,9 @@ function Projects({ darkMode }) {
                 >
                   <img
                     src={projectImage}
-                    alt={t(titleKey)}
+                    alt={`Imagen del proyecto: ${t(titleKey)}`}
                     className="w-full h-48 object-cover"
+                    loading="lazy"
                   />
 
                   <div className="p-6 space-y-4">

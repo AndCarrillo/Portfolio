@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import {
-  FaCode,
   FaBars,
   FaTimes,
   FaUser,
@@ -10,6 +9,7 @@ import {
   FaEnvelope,
   FaHome,
 } from "react-icons/fa";
+import { GiCoffeeCup } from "react-icons/gi";
 import ThemeToggle from "../common/ThemeToggle";
 
 // Secciones del menú
@@ -48,7 +48,7 @@ function Navbar({ darkMode, setDarkMode }) {
       <div className="relative max-w-screen-xl mx-auto px-6 py-3 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center gap-2 text-lg font-semibold z-20">
-          <FaCode className="text-2xl text-pastel3" />
+          <GiCoffeeCup className="text-2xl text-pastel3" />
           <span className="tracking-wide text-white">{t("siteName")}</span>
         </div>
 

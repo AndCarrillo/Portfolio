@@ -58,7 +58,12 @@
   },
   "contact": {
     "title": "Contacto",
+    "slogan": "Desarrolladora Fullstack | Data Engineer",
     "intro": "¿Interesado en colaborar o conocer más sobre mi trabajo? ¡Estoy abierta a nuevas oportunidades, proyectos y desafíos!",
+    "nav_home": "Inicio",
+    "nav_about": "Sobre mí",
+    "nav_skills": "Habilidades",
+    "nav_projects": "Proyectos",
     "email": "Correo",
     "github": "GitHub",
     "linkedin": "LinkedIn"

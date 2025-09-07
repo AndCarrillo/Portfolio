@@ -36,23 +36,31 @@ function Hero() {
               {/* Correo */}
               <a
                 href={`mailto:${EMAIL_URL}`}
-                className="inline-flex items-center gap-2 bg-brand-primary dark:bg-brand-accent text-pastel3 font-medium px-4 py-2 rounded-full shadow-md hover:bg-[#2a2b35] dark:hover:bg-[#ffffff] hover:text-pastel1 transition-all duration-300 border border-pastel3"
+                className="group relative inline-flex items-center gap-2 justify-center px-4 md:px-6 h-14 rounded-full bg-gradient-to-b from-white via-[#ffe0f0] to-[#f9c6e0] dark:from-[#23234a] dark:via-[#1a1a2e] dark:to-[#33213a] border-t-2 border-b-4 border-l border-r border-white/80 border-b-[#f9c6e0] dark:border-t-[#3a3a6a] dark:border-b-[#c97fa7] shadow-xl shadow-pink-200/40 dark:shadow-[#1a1a2e]/60 hover:shadow-2xl hover:brightness-105 active:translate-y-1 transition-all duration-300 focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-primary/80 min-w-14 md:min-w-[180px] overflow-hidden"
               >
-                <FaEnvelope className="w-5 h-5 text-white dark:text-text-primary" />
-                <span className="text-white dark:text-text-primary">
+                {/* Brillo superior */}
+                <span className="absolute top-0 left-0 w-full h-1/3 rounded-t-full bg-white/40 dark:bg-white/10 blur-sm pointer-events-none" />
+                <FaEnvelope className="w-7 h-7 text-brand-primary dark:text-brand-accent group-hover:text-pastel1 transition-colors duration-300 z-10" />
+                <span className="hidden md:inline font-semibold text-brand-primary dark:text-brand-accent group-hover:text-pastel1 transition-colors duration-300 z-10">
                   {EMAIL_URL}
                 </span>
               </a>
 
               {/* GitHub */}
+
               <a
                 href={GITHUB_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
-                className="transition-all duration-300 hover:scale-110 hover:text-pastel1"
+                className="group relative inline-flex items-center gap-2 justify-center px-4 md:px-6 h-14 rounded-full bg-gradient-to-b from-white via-[#f3eaff] to-[#e0d6ff] dark:from-[#23234a] dark:via-[#1a1a2e] dark:to-[#18182c] border-t-2 border-b-4 border-l border-r border-white/80 border-b-[#bdb4e6] dark:border-t-[#3a3a6a] dark:border-b-[#6a5acd] shadow-xl shadow-indigo-200/40 dark:shadow-[#1a1a2e]/60 hover:shadow-2xl hover:brightness-105 active:translate-y-1 transition-all duration-300 focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-primary/80 min-w-14 md:min-w-[120px] overflow-hidden"
               >
-                <FaGithub className="w-10 h-10 text-brand-primary dark:text-brand-accent" />
+                {/* Brillo superior */}
+                <span className="absolute top-0 left-0 w-full h-1/3 rounded-t-full bg-white/40 dark:bg-white/10 blur-sm pointer-events-none" />
+                <FaGithub className="w-7 h-7 text-brand-primary dark:text-brand-accent group-hover:text-pastel1 transition-colors duration-300 z-10" />
+                <span className="hidden md:inline font-semibold text-brand-primary dark:text-brand-accent group-hover:text-pastel1 transition-colors duration-300 z-10">
+                  GitHub
+                </span>
               </a>
 
               {/* LinkedIn */}
@@ -61,9 +69,14 @@ function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="transition-all duration-300 hover:scale-110 hover:text-pastel1"
+                className="group relative inline-flex items-center gap-2 justify-center px-4 md:px-6 h-14 rounded-full bg-gradient-to-b from-white via-[#eafffa] to-[#d6f7ff] dark:from-[#23234a] dark:via-[#1a1a2e] dark:to-[#18324a] border-t-2 border-b-4 border-l border-r border-white/80 border-b-[#b4e6e0] dark:border-t-[#3a3a6a] dark:border-b-[#5ad6cd] shadow-xl shadow-cyan-200/40 dark:shadow-[#1a1a2e]/60 hover:shadow-2xl hover:brightness-105 active:translate-y-1 transition-all duration-300 focus:outline-none focus-visible:ring-4 focus-visible:ring-brand-primary/80 min-w-14 md:min-w-[120px] overflow-hidden"
               >
-                <FaLinkedin className="w-10 h-10 text-brand-primary dark:text-brand-accent" />
+                {/* Brillo superior */}
+                <span className="absolute top-0 left-0 w-full h-1/3 rounded-t-full bg-white/40 dark:bg-white/10 blur-sm pointer-events-none" />
+                <FaLinkedin className="w-7 h-7 text-brand-primary dark:text-brand-accent group-hover:text-pastel1 transition-colors duration-300 z-10" />
+                <span className="hidden md:inline font-semibold text-brand-primary dark:text-brand-accent group-hover:text-pastel1 transition-colors duration-300 z-10">
+                  LinkedIn
+                </span>
               </a>
             </div>
           </div>
